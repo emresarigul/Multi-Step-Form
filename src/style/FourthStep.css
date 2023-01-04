@@ -1,0 +1,104 @@
+.fourth-step-wrapper {
+  min-height: 400px;
+  padding-right: 50px;
+}
+
+.fourth-step-wrapper .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.fourth-step-wrapper .description {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.fourth-step-wrapper .summary-wrapper {
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 5px;
+  padding: 20px 20px 10px 20px;
+}
+
+.summary-wrapper .plan-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(229, 24%, 87%);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.summary-wrapper .plan-summary .selected-plan .plan-name {
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+}
+
+.summary-wrapper .plan-summary .selected-plan .change-plan-btn {
+  cursor: pointer;
+  text-decoration: underline;
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+
+.summary-wrapper .plan-summary .selected-plan .change-plan-btn:hover {
+  color: hsl(243, 100%, 62%);
+}
+
+.summary-wrapper .plan-summary .selected-plan-price {
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+}
+
+.summary-wrapper .add-ons-summary .add-on-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.add-ons-summary .add-on-inner-wrapper .add-on-name {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+}
+
+.add-ons-summary .add-on-inner-wrapper .add-on-price {
+  color: hsl(213, 96%, 18%);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.fourth-step-wrapper .total-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 1.5rem;
+}
+
+.fourth-step-wrapper .total-price-wrapper .total {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+}
+
+.fourth-step-wrapper .total-price-wrapper .total-price {
+  color: hsl(243, 100%, 62%);
+  font-weight: 700;
+  font-size: 19px;
+}
+
+/*media*/
+@media screen and (max-width: 768px) {
+  .fourth-step-wrapper {
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .fourth-step-wrapper .heading {
+    font-size: 23px;
+  }
+}

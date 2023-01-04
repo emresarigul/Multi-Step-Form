@@ -1,0 +1,127 @@
+.second-step-wrapper {
+  padding-right: 50px;
+  min-height: 400px;
+}
+
+.second-step-wrapper .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.second-step-wrapper .description {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.second-step-wrapper .plan-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.second-step-wrapper .plan-wrapper .plan {
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+  padding: 15px 0 15px 15px;
+  min-width: 130px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.second-step-wrapper .plan-wrapper .plan:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.plan-wrapper .plan.selected {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsl(217, 100%, 97%);
+  transition: 0.2s ease-in-out;
+}
+
+.plan-wrapper .plan .plan-image {
+  margin-bottom: 2.2rem;
+}
+
+.plan-wrapper .plan .plan-info .plan-name {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.plan-wrapper .plan .plan-info .plan-price {
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.plan-wrapper .plan .plan-info .yearly-free-months {
+  font-size: 13px;
+  color: hsl(213, 96%, 18%);
+}
+
+.second-step-wrapper .monthly-yearly-option {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(217, 100%, 97%);
+  padding: 15px 0;
+  gap: 2rem;
+}
+
+.second-step-wrapper .monthly-yearly-option .switcher {
+  position: relative;
+  background-color: hsl(213, 96%, 18%);
+  width: 42px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.second-step-wrapper .monthly-yearly-option .switcher::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 3px;
+  right: inherit;
+  top: 3px;
+  transition: 0.3s ease-in-out;
+}
+.second-step-wrapper .monthly-yearly-option .switcher.yearly::after {
+  transform: translateX(22px);
+}
+
+.second-step-wrapper .monthly-yearly-option .monthly,
+.yearly {
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .second-step-wrapper {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+  .second-step-wrapper .plan-wrapper {
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  .second-step-wrapper .heading {
+    font-size: 23px;
+  }
+  .second-step-wrapper .plan-wrapper .plan {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .plan-wrapper .plan .plan-image {
+    margin-bottom: 0;
+  }
+}

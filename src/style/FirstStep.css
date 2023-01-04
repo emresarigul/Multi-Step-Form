@@ -1,0 +1,52 @@
+.first-step-wrapper {
+  padding-right: 50px;
+  min-height: 400px;
+}
+
+.first-step-wrapper .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.first-step-wrapper .description {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.first-step-wrapper label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-step-wrapper input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid hsl(231, 11%, 63%);
+  margin-bottom: 1.5rem;
+}
+
+.first-step-wrapper .warning-text {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+/*media*/
+
+@media screen and (max-width: 768px) {
+  .first-step-wrapper {
+    padding-right: 0;
+  }
+
+  .first-step-wrapper .heading {
+    font-size: 23px;
+  }
+}

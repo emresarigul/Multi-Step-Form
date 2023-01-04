@@ -1,0 +1,116 @@
+.third-step-wrapper {
+  min-height: 400px;
+  padding-right: 50px;
+}
+
+.third-step-wrapper .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.third-step-wrapper .description {
+  color: hsl(231, 11%, 63%);
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.third-step-wrapper .add-ons-flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  padding: 17px 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.third-step-wrapper .add-ons-flex-wrapper:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.third-step-wrapper .add-ons-flex-wrapper.selected-add-on {
+  background-color: hsl(217, 100%, 97%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.third-step-wrapper .add-ons-flex-wrapper .add-on-inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.third-step-wrapper
+  .add-ons-flex-wrapper
+  .add-on-inner-wrapper
+  .custom-checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-step-wrapper
+  .add-ons-flex-wrapper
+  .add-on-inner-wrapper
+  .custom-checkbox
+  img {
+  display: none;
+}
+
+.third-step-wrapper
+  .add-ons-flex-wrapper
+  .add-on-inner-wrapper
+  .custom-checkbox.selected-checkbox {
+  background-color: hsl(243, 100%, 62%);
+  border: transparent;
+}
+
+.third-step-wrapper
+  .add-ons-flex-wrapper
+  .add-on-inner-wrapper
+  .custom-checkbox.selected-checkbox
+  img {
+  display: block;
+}
+
+.third-step-wrapper
+  .add-ons-flex-wrapper
+  .add-on-inner-wrapper
+  input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.add-on-inner-wrapper .add-on-info .add-on-name {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.add-on-inner-wrapper .add-on-info .add-on-description {
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+}
+
+.add-ons-flex-wrapper .add-on-price {
+  color: hsl(243, 100%, 62%);
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .third-step-wrapper {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+  .third-step-wrapper .heading {
+    font-size: 23px;
+  }
+}

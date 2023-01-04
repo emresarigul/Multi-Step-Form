@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(217, 100%, 97%);
+  display: grid;
+  align-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+label {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.bold-blue {
+  transition: 0.3s ease-in-out;
+  color: hsl(213, 96%, 18%) !important;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.container .box-wrapper {
+  max-width: 800px;
+  min-height: 530px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .box-wrapper .flex-wrapper {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.container .box-wrapper .flex-wrapper .right-area-wrapper {
+  flex-basis: 70%;
+}
+
+.container .box-wrapper .flex-wrapper .button-wrapper {
+  padding-right: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+.container .box-wrapper .flex-wrapper .button-wrapper.not-first-page {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrapper .button-wrapper .go-back {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.flex-wrapper .button-wrapper .go-back:hover {
+  color: #174a8a;
+}
+
+.flex-wrapper .button-wrapper .next-step {
+  background-color: hsl(213, 96%, 18%);
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.flex-wrapper .button-wrapper .next-step:hover {
+  background-color: #174a8a;
+}
+.flex-wrapper .button-wrapper .next-step.confirm-section:hover {
+  background-color: hsl(243, 100%, 62%);
+  opacity: 0.5;
+}
+
+/* media*/
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+  .container .box-wrapper {
+    background-color: unset;
+    min-height: unset;
+    padding: 0;
+    box-shadow: unset;
+  }
+  .container .box-wrapper .flex-wrapper {
+    display: block;
+    gap: 0;
+  }
+
+  .container .box-wrapper .flex-wrapper .right-area-wrapper {
+    background-color: #fff;
+    margin: -6rem 15px 0 15px;
+    padding: 0 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+  }
+
+  .container .box-wrapper .flex-wrapper .button-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    padding: 15px 15px;
+    background-color: #fff;
+  }
+
+  .container .box-wrapper .flex-wrapper .button-wrapper.not-first-page {
+    padding: 15px;
+  }
+}
